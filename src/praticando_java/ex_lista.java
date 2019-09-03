@@ -11,7 +11,7 @@ public class ex_lista {
     public static void main(String[] args){
         
         List<String> lista = new ArrayList<>();
-        
+       
         lista.add("Larissa");
         lista.add("Bruno");
         lista.add("Matheus");

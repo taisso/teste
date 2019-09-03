@@ -2,12 +2,12 @@ package entidades;
 
 class No{
     
-    public int numero;
+    public Object info;
     public No prox;
     
-    public No(int numero){//CONSTRUTOR
+    public No(int info){//CONSTRUTOR
         
-        this.numero = numero;       
+        this.info = info;       
     }
  
 }
@@ -23,9 +23,9 @@ public class ListaEncadeada {
        
     }
 
-    public void InsereListaInicio(int numero){
+    public void InsereListaInicio(int info){
      
-        No novo = new No(numero);
+        No novo = new No(info);
         novo.prox = primeiro;
         primeiro = novo;
     }
@@ -34,7 +34,7 @@ public class ListaEncadeada {
         
         No aux = primeiro;
         while(aux != null){
-            System.out.printf("%d ", aux.numero);
+            System.out.printf("%d ", aux.info);
             aux = aux.prox;
         }
         

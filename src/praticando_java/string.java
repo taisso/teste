@@ -10,14 +10,14 @@ public class string {
         
         String original = " abcde FGHIJ ABC abc DEFG ";
         String copia = "Taisso Reni De Souza Melo";
-        String copia2 = "Taisso Reni De Souza Melo";
+        String copia2 = "taisso ReNi De Souza Melo";
         Scanner input = new Scanner(System.in);
         
         
-        String s01 = original.toLowerCase();
-        String s02 = original.toUpperCase();
-        String s03 = original.trim();
-        String s04 = original.substring(2);
+        String s01 = original.toLowerCase();//DEIXA TUDO EM MINÚSCULA
+        String s02 = original.toUpperCase();//DEIXTA TUDO EM MAÍSCULA
+        String s03 = original.trim();//RETIRA OS ESPAÇOS ANTES E DEPOIS A STRING
+        String s04 = original.substring(2);//CRIA UMA NOVA STRING A PARTI DE UMA POSIÇÃO 
         String s05 = original.substring(2,9);
         String s06 = original.replace('a','x');
         String s07 = original.replace("abc","xy");
@@ -39,6 +39,14 @@ public class string {
         System.out.println("lastIndexOf(bc): -" + j + '-');
         System.out.println(s08[0]);
         
+        String var1 = "Texto complexo";
+        String var2 = "Texto ";
+        
+        System.out.println("String são iguais? " + var2.equals(var1));
+        System.out.println("String contém? " + var1.contains(var2));
+        //equals compara duas expressões são iguais
+        //contains verifica se uma expressão está contida em outra
+        //RETORNAM true ou false
     }
     
     

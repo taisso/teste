@@ -14,12 +14,10 @@ class No{
 
 public class ListaEncadeada {
     
-    private No primeiro;
+    private static No primeiro;
     
    
-    public ListaEncadeada(){//CONSTRUTOR
-        
-        primeiro = null;
+    public  ListaEncadeada(){//CONSTRUTOR
        
     }
 

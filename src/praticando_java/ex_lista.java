@@ -43,6 +43,8 @@ public class ex_lista {
          
         String nome = lista.stream().filter(x -> x.charAt(0) == 'D').findFirst().orElse(null);
         System.out.println(nome);
+        
+       
     }
     
 }

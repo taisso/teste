@@ -8,7 +8,8 @@ import java.util.TimeZone;
 
 public class Data_hora {
     
-    public static void main(String[] args) throws ParseException{
+    @SuppressWarnings("deprecation")
+	public static void main(String[] args) throws ParseException{
         
         SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
         SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
@@ -58,6 +59,11 @@ public class Data_hora {
         System.out.println("y2: " + sdf3.format(y2));
         System.out.println("y3: " + sdf3.format(y3));      
         
+        
+        java.util.Date f = new java.util.Date();
+        java.sql.Date d = new java.sql.Date(f.getTime());
+ 
+        System.out.println(d);
     }   
     
 }

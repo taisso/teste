@@ -2,6 +2,8 @@ package praticando_java;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.stream.Collectors;
 
 public class lista{
@@ -23,7 +25,7 @@ public class lista{
         System.out.println("Tamanho da lista: " + list.size());//SABER QUAL O TAMANHO DA LISTA
         list.remove("Maria");//REMOVE UM NÓ DA LISTA
         list.remove(3);//TAMBÉM PODE REMOVER INFORMANDO A POSIÇÃO "Pedro"
-        
+       
         for(String i : list){
             System.out.println(i);
         }
